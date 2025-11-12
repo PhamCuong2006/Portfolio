@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mysterious Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="overlay"></div>
@@ -12,40 +13,68 @@
         <h1 class="glow">The Enigmatic Portfolio</h1>
         <p class="title">Unravel the secrets within...</p>
     </header>
-    <main>
-        <section class="about">
-            <h2>Who am I?</h2>
-            <img src="images/me.jpg">
+
+    <!-- replaced single <main> wrapper with three separate panel containers -->
+    <div class="panel" id="introduction-panel">
+        <section id="introduction" class="about">
+            <h2>Introduction</h2>
+            <img src="images/me.jpg" alt="Photo of Tony">
             <p>
-                I'm Tony, I'm a Vietnamese international student at Michigan State University (My Vietnamese name is Phạm Cường). 
-                I'm really into programming and machine learning. I'm a certified weeb and I'm big fan of anime and manga. 
-                I also enjoy being a mysterious gamer and I have a huge collection of anime figures in my room in Vietnam. 
-                I really love listening to J-POP and K-POP music. Here is my portfolio to showcase my skills and projects!
+                I'm Tony (Phạm Cường), a Vietnamese international student at Michigan State University.
+                I enjoy programming, machine learning, anime, and gaming. This site showcases my background,
+                skills, and projects.
             </p>
         </section>
-        <section class="content-boxes">
-            <div class="content-box">
-                <h3 class="subtitle">Experience</h3>
-                <ul>
-                    <li>AIoT Lab VN (May-August 2025)</li>
-                    <li>Global Career Accelerator (August 2025-Present)</li>
-                </ul>
-            </div>
-            <div class="content-box">
-                <h3 class="subtitle">Skills</h3>
-                <ul>
-                    <li>C++, Python, HTML, CSS</li>
-                    <li>Machine Learning foundation</li>
-                    <li>AWS</li>
-                </ul>
-            </div>
-            <div class="content-box">
-                <h3 class="subtitle">Projects</h3>
-                <ul>
-                    <li>Portfolio website</li>
-                </ul>
+    </div>
+
+    <div class="panel" id="projects-panel">
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+
+            <!-- Featured projects grid -->
+            <div id="featured-projects" class="featured-grid" aria-label="Featured projects">
+                <article class="featured-card">
+                    <img class="project-image" src="images/phamcuong2006.github.io_Project-5-Intel-Summit-Check-In_.png" alt="Screenshot of Project One" />
+                    <h3 class="project-card-title">Intel Summit Check-In</h3>
+                    <p class="project-card-desc">Attendee check-in web app for the Intel Summit — quick registration, badge generation, and attendee lookup. Built with HTML/CSS/JS.</p>
+                    <a class="project-card-link" href="https://phamcuong2006.github.io/Project-5-Intel-Summit-Check-In/">View Project</a>
+                </article>
+
+                <article class="featured-card">
+                    <img class="project-image" src="images/phamcuong2006.github.io_Project-6-Completed-charity-water-Game_.png" alt="Screenshot of Project Two" />
+                    <h3 class="project-card-title">Charity: Water Game</h3>
+                    <p class="project-card-desc">A small browser game built to raise awareness for clean water initiatives — interactive mechanics and score tracking using JavaScript.</p>
+                    <a class="project-card-link" href="https://phamcuong2006.github.io/Project-5-charity-water-Game-Prototype/">View Project</a>
+                </article>
+
+                <article class="featured-card">
+                    <img class="project-image" src="images/phamcuong2006.github.io_Project-7-NASA-Space-Explorer-App_.png" alt="Screenshot of Project Three" />
+                    <h3 class="project-card-title">NASA Space Explorer</h3>
+                    <p class="project-card-desc">An explorer app surfacing NASA images and planetary data — interactive UI that consumes public NASA APIs to browse missions and media.</p>
+                    <a class="project-card-link" href="https://phamcuong2006.github.io/Project-7-NASA-Space-Explorer-App/">View Project</a>
+                </article>
+
+                <article class="featured-card">
+                    <img class="project-image" src="images/phamcuong2006.github.io_Project-8-Build-a-Chatbot-for-L-Or-al_.png" alt="Screenshot of Project Four" />
+                    <h3 class="project-card-title">L'Oréal Chatbot</h3>
+                    <p class="project-card-desc">Prototype conversational assistant for L'Oréal to help with product recommendations and FAQs — demo of conversational UI and intent handling.</p>
+                    <a class="project-card-link" href="https://phamcuong2006.github.io/Project-8-Build-a-Chatbot-for-L-Or-al/">View Project</a>
+                </article>
             </div>
         </section>
-    </main>
+    </div>
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fas fa-robot"></i> Machine Learning Foundation</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fab fa-cuttlefish"></i> C/C++</li>
+            <li>Web Design</li>
+        </ul>
+    </section>
 </body>
 </html>
